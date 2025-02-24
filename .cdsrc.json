@@ -1,0 +1,14 @@
+{
+  "typer": {
+    "use_entities_proxy": true,
+    "output_directory": "@cds-models",
+    "target_module_type": "esm"
+  },
+  "swagger": {
+    "basePath": "/swagger",
+    "apiPath": "",
+    "diagram": false,
+    "odataVersion": "4.0"
+  },
+  "tsconfig": "./tsconfig.json"
+}
