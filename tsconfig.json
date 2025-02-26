@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "rootDir": ".",
+    "baseUrl": ".",
+    "outDir": "./gen/srv",
+    "paths": {
+      "#cds-models/*": [
+        "./@cds-models/*"
+      ]
+    }
+  }
+}
