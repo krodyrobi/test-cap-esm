@@ -4,21 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e026dde1-4ada-49d4-b866-fdf08dd6daab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/jest.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srv/dep.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srv/example.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/integration/application-service.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/setup.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/unit/example.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.cds" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.cds" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsconfig.json" beforeDir="false" />
+    <list default="true" id="e026dde1-4ada-49d4-b866-fdf08dd6daab" name="Changes" comment="Jest testing fails">
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv/application-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/srv/application-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv/server.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +50,8 @@
     "nodejs_package_manager_path": "npm",
     "npm.gen:types.executor": "Run",
     "npm.run.executor": "Run",
-    "npm.test.executor": "Debug",
+    "npm.test.executor": "Run",
+    "npm.test:unit.executor": "Run",
     "npm.watch.executor": "Run",
     "settings.editor.selected.configurable": "settings.nodejs",
     "ts.external.directory.path": "/Users/I346604/Desktop/workspace/personal/test-cap/node_modules/typescript/lib",
@@ -79,7 +68,7 @@
       <recent name="$PROJECT_DIR$/test/unit" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.watch">
+  <component name="RunManager" selected="npm.test:unit">
     <configuration name="gen:types" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -100,6 +89,16 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="test:unit" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test:unit" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -111,12 +110,14 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="npm.test:unit" />
       <item itemvalue="npm.test" />
       <item itemvalue="npm.gen:types" />
       <item itemvalue="npm.watch" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.test:unit" />
         <item itemvalue="npm.watch" />
         <item itemvalue="npm.test" />
         <item itemvalue="npm.gen:types" />
@@ -163,12 +164,25 @@
       <workItem from="1741793233597" duration="191000" />
       <workItem from="1742024829647" duration="244000" />
       <workItem from="1742197099798" duration="752000" />
-      <workItem from="1742198410757" duration="9063000" />
+      <workItem from="1742198410757" duration="10025000" />
     </task>
+    <task id="LOCAL-00001" summary="Jest testing fails">
+      <option name="closed" value="true" />
+      <created>1742213052915</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742213052915</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Jest testing fails" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jest testing fails" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
