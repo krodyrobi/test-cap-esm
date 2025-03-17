@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e026dde1-4ada-49d4-b866-fdf08dd6daab" name="Changes" comment="Jest testing fails">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +39,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "jest-testing-esm",
     "go.import.settings.migrated": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/I346604/Desktop/workspace/personal/test-cap/test",
@@ -68,7 +71,7 @@
       <recent name="$PROJECT_DIR$/test/unit" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.test:unit">
+  <component name="RunManager" selected="npm.test">
     <configuration name="gen:types" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -117,9 +120,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.test" />
         <item itemvalue="npm.test:unit" />
         <item itemvalue="npm.watch" />
-        <item itemvalue="npm.test" />
         <item itemvalue="npm.gen:types" />
       </list>
     </recent_temporary>
@@ -164,7 +167,7 @@
       <workItem from="1741793233597" duration="191000" />
       <workItem from="1742024829647" duration="244000" />
       <workItem from="1742197099798" duration="752000" />
-      <workItem from="1742198410757" duration="10025000" />
+      <workItem from="1742198410757" duration="11958000" />
     </task>
     <task id="LOCAL-00001" summary="Jest testing fails">
       <option name="closed" value="true" />
@@ -174,7 +177,23 @@
       <option name="project" value="LOCAL" />
       <updated>1742213052915</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Jest testing fails">
+      <option name="closed" value="true" />
+      <created>1742213631005</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742213631006</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Jest testing fails">
+      <option name="closed" value="true" />
+      <created>1742213633508</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1742213633508</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
