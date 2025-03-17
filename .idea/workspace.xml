@@ -4,11 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e026dde1-4ada-49d4-b866-fdf08dd6daab" name="Changes" comment="" />
+    <list default="true" id="e026dde1-4ada-49d4-b866-fdf08dd6daab" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/jest.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srv/dep.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srv/example.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/integration/application-service.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/setup.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/unit/example.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.cds" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.cds" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv/application-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/srv/application-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv/server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -24,30 +42,41 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Jest.module.executor": "Run",
+    "Mocha.Retry.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/I346604/Desktop/workspace/personal/test-cap/srv",
+    "last_opened_file_path": "/Users/I346604/Desktop/workspace/personal/test-cap/test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "/Users/I346604/Desktop/workspace/personal/test-cap/node_modules/ts-jest",
+    "nodejs.mocha.mocha_node_package_dir": "/Users/I346604/Desktop/workspace/personal/test-cap/node_modules/mocha",
     "nodejs_interpreter_path": "/Users/I346604/.nvm/versions/node/v20.16.0/bin/node",
     "nodejs_package_manager_path": "npm",
     "npm.gen:types.executor": "Run",
-    "npm.run.executor": "Debug",
+    "npm.run.executor": "Run",
+    "npm.test.executor": "Debug",
     "npm.watch.executor": "Run",
     "settings.editor.selected.configurable": "settings.nodejs",
-    "ts.external.directory.path": "/Users/I346604/Applications/IntelliJ IDEA Ultimate.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "ts.external.directory.path": "/Users/I346604/Desktop/workspace/personal/test-cap/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/srv" />
+      <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/srv" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test/unit" />
     </key>
   </component>
   <component name="RunManager" selected="npm.watch">
@@ -56,6 +85,16 @@
       <command value="run" />
       <scripts>
         <script value="gen:types" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -72,12 +111,14 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="npm.test" />
       <item itemvalue="npm.gen:types" />
       <item itemvalue="npm.watch" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="npm.watch" />
+        <item itemvalue="npm.test" />
         <item itemvalue="npm.gen:types" />
       </list>
     </recent_temporary>
@@ -105,7 +146,24 @@
       <workItem from="1740411753494" duration="40000" />
       <workItem from="1740411797796" duration="58000" />
       <workItem from="1740411860196" duration="696000" />
-      <workItem from="1740557619463" duration="5772000" />
+      <workItem from="1740557619463" duration="7408000" />
+      <workItem from="1740647761118" duration="2276000" />
+      <workItem from="1740728826466" duration="253000" />
+      <workItem from="1740729093185" duration="2495000" />
+      <workItem from="1740989176599" duration="599000" />
+      <workItem from="1741181733347" duration="1021000" />
+      <workItem from="1741245435191" duration="3092000" />
+      <workItem from="1741269070014" duration="599000" />
+      <workItem from="1741335794753" duration="5199000" />
+      <workItem from="1741610866170" duration="4635000" />
+      <workItem from="1741676478088" duration="1460000" />
+      <workItem from="1741677953481" duration="3647000" />
+      <workItem from="1741765304339" duration="5741000" />
+      <workItem from="1741772650927" duration="6632000" />
+      <workItem from="1741793233597" duration="191000" />
+      <workItem from="1742024829647" duration="244000" />
+      <workItem from="1742197099798" duration="752000" />
+      <workItem from="1742198410757" duration="9063000" />
     </task>
     <servers />
   </component>
@@ -119,9 +177,22 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/srv/server.ts</url>
-          <line>10</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/node_modules/@sap/cds/bin/serve.js</url>
+          <line>262</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/@sap/cds/lib/srv/factory.js</url>
+          <line>31</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/@sap/cds/lib/utils/cds-utils.js</url>
+          <line>288</line>
+          <properties lambdaOrdinal="0" />
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
