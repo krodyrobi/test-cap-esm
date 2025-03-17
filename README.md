@@ -4,18 +4,21 @@
 npm install
 npm run gen:types
 
-# fails on enum type, weird export in esm?
-npm build --production
-cd gen/srv
-npm run start
+# works
+npm run watch
+npm run test:unit
 
-# @cap-js-community/odata-v2-adapter TS type not callable
-# remove ts-ignore from server.ts
+# fails
+npm run test
+# Must use import to load ES Module: <...>/srv/application-service.ts
+
+# having a custom server.ts does not change behaviour
+# even though running with jest the cds.utlis._import doesn't seem to correctly detect JEST_WORKER_ID in @sap/cds/lib/cds-utils.js+290
 ```
 
 ```
 @cap-js/asyncapi: 1.0.2
-@cap-js/cds-typer: 0.33.0
+@cap-js/cds-typer: 0.33.1
 @cap-js/cds-types: 0.9.0
 @cap-js/db-service: 1.17.2
 @cap-js/openapi: 1.1.2
