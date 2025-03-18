@@ -3,18 +3,29 @@
 ```
 npm install
 npm run gen:types
-
-# works
-npm run watch
-npm run test:unit
-
-# fails
-npm run test
-# Must use import to load ES Module: <...>/srv/application-service.ts
-
-# having a custom server.ts does not change behaviour
-# even though running with jest the cds.utlis._import doesn't seem to correctly detect JEST_WORKER_ID in @sap/cds/lib/cds-utils.js+290
 ```
+
+## Change test case in application-service.ts
+
+```
+import {testFunction, testFunction2} from "#cds-models/ApplicationService"          # case 1
+import {testFunction, testFunction2} from "#cds-models/ApplicationService/index.js" # case 2
+```
+
+```shell
+// watching
+cds watch
+
+//compilation
+cds build --production; cd gen/srv; npm install; npm start;
+
+```
+
+| Case # | compilation                                      | watching                                                                   |
+|--------|--------------------------------------------------|----------------------------------------------------------------------------|
+| 1      | `is not supported resolving ES modules imported` | ok                                                                         |
+| 2      | ok                                               | fails testFunction2() executes onTestFunction() exported name is undefined |
+
 
 ```
 @cap-js/asyncapi: 1.0.2
