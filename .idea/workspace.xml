@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e026dde1-4ada-49d4-b866-fdf08dd6daab" name="Changes" comment="Jest testing fails">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    <list default="true" id="e026dde1-4ada-49d4-b866-fdf08dd6daab" name="Changes" comment="Fix paths">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv/application-service.cds" beforeDir="false" afterPath="$PROJECT_DIR$/srv/application-service.cds" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv/application-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/srv/application-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv/dep.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srv/example.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/integration/application-service.test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/setup.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/unit/example.test.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +46,10 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "git-widget-placeholder": "jest-testing-esm",
+    "git-widget-placeholder": "types-not-useable-esm-proxy",
     "go.import.settings.migrated": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/I346604/Desktop/workspace/personal/test-cap/test",
+    "last_opened_file_path": "/Users/I346604/Desktop/workspace/personal/test-cap/gen/srv",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -53,30 +60,43 @@
     "nodejs_package_manager_path": "npm",
     "npm.gen:types.executor": "Run",
     "npm.run.executor": "Run",
+    "npm.start.executor": "Run",
     "npm.test.executor": "Run",
     "npm.test:unit.executor": "Run",
     "npm.watch.executor": "Run",
     "settings.editor.selected.configurable": "settings.nodejs",
-    "ts.external.directory.path": "/Users/I346604/Desktop/workspace/personal/test-cap/node_modules/typescript/lib",
+    "ts.external.directory.path": "/Users/I346604/Applications/IntelliJ IDEA Ultimate.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gen/srv" />
       <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/srv" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gen/srv/srv" />
       <recent name="$PROJECT_DIR$/test/unit" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.test">
+  <component name="RunManager" selected="npm.watch">
     <configuration name="gen:types" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="gen:types" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/gen/srv/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -113,6 +133,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="npm.start" />
       <item itemvalue="npm.test:unit" />
       <item itemvalue="npm.test" />
       <item itemvalue="npm.gen:types" />
@@ -120,10 +141,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.test" />
-        <item itemvalue="npm.test:unit" />
         <item itemvalue="npm.watch" />
         <item itemvalue="npm.gen:types" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.test" />
+        <item itemvalue="npm.test:unit" />
       </list>
     </recent_temporary>
   </component>
@@ -168,6 +190,8 @@
       <workItem from="1742024829647" duration="244000" />
       <workItem from="1742197099798" duration="752000" />
       <workItem from="1742198410757" duration="11958000" />
+      <workItem from="1742454946913" duration="10257000" />
+      <workItem from="1742545939774" duration="3770000" />
     </task>
     <task id="LOCAL-00001" summary="Jest testing fails">
       <option name="closed" value="true" />
@@ -193,15 +217,43 @@
       <option name="project" value="LOCAL" />
       <updated>1742213633508</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fix paths">
+      <option name="closed" value="true" />
+      <created>1742455174230</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1742455174230</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fix paths">
+      <option name="closed" value="true" />
+      <created>1742455930767</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742455930767</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Jest testing fails" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jest testing fails" />
+    <MESSAGE value="Fix paths" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix paths" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
@@ -212,20 +264,32 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/node_modules/@sap/cds/bin/serve.js</url>
           <line>262</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/node_modules/@sap/cds/lib/srv/factory.js</url>
           <line>31</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/node_modules/@sap/cds/lib/utils/cds-utils.js</url>
-          <line>288</line>
-          <properties lambdaOrdinal="0" />
+          <url>file://$PROJECT_DIR$/node_modules/@cap-js/cds-typer/lib/components/javascript.js</url>
+          <line>21</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/gen/srv/node_modules/@cap-js/cds-typer/lib/components/javascript.js</url>
+          <line>21</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/gen/srv/@cds-models/_/index.js</url>
+          <line>20</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/srv/application-service.ts</url>
+          <line>14</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

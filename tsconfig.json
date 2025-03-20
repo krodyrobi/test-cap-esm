@@ -14,7 +14,7 @@
     "outDir": "./gen/srv",
     "paths": {
       "#cds-models/*": [
-        "@cds-models/*"
+        "./@cds-models/*"
       ],
       "#root/*": [
         "./*"

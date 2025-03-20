@@ -1,12 +1,17 @@
 import cds from "@sap/cds";
 
-import {Application} from "#cds-models/ApplicationService/index.js"
-
-const log = cds.log('ApplicationService', { label: 'ApplicationService' })
+import {Applications} from "#cds-models/ApplicationService/index.js"
 
 export default class ApplicationService extends cds.ApplicationService {
   async init(): Promise<void> {
-    log.info(Application)
+    this.on('READ', Applications, this.onRead)
+
     await super.init()
+  }
+
+  async onRead(): Promise<Applications> {
+    console.dir(Applications)
+    console.dir(Applications)
+    return SELECT.from(Applications)
   }
 }
